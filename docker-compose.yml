@@ -5,6 +5,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    # ---- YEH BALA SECTION ADD KIYA HAI ----
+    ports:
+      - "8000:8000"  # Yeh aapke laptop ke port 8000 ko container se jodh dega
+    # -------------------------------------
     environment:
       - ENV=production
       - REDIS_HOST=redis
